@@ -122,6 +122,7 @@ h3 {
 .btn {
   display: inline-block;
   padding: 10px 30px;
+  font-size: 90%;
   font-weight: 300;
   text-decoration: none;
   border-radius: 200px;
@@ -145,6 +146,7 @@ h3 {
 
 .btn.outline {
   background: none;
+  color: #e67e22;
   padding: 12px 22px;
 }
 
@@ -153,7 +155,7 @@ h3 {
   color: #e67e22;
 }
 
-.btn-primary.outline:hover, .btn-primary.outline:focus, .btn-primary.outline:active, .btn-primary.outline.active, .open>.dropdown-toggle.btn-primary {
+.btn-primary.outline:hover, .btn-primary.outline:focus, .btn-primary.outline:active, .open>.dropdown-toggle.btn-primary {
   border: 1px solid #e67e22;
   color: #e67e22;
   background-color: #e67e22;
@@ -168,6 +170,7 @@ header {
   background-size: cover;
   background-position: center;
   height: 100vh;
+  background-attachment: fixed;
 }
 
 .hero-text-box {
@@ -345,6 +348,138 @@ a:hover, a:active {
 
 .city-feature a {
   display: inline;
-
   color: #e67e22;
+}
+
+/**********************************************************************/
+/*Testimonials*/
+/**********************************************************************/
+.section-testimonials {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.79),rgba(0, 0, 0, 0.79)), url(img-css/back-customers.jpg);
+  background-size: cover;
+  color: white;
+  background-attachment: fixed;
+}
+
+blockquote {
+  padding: 2%;
+  font-style: italic;
+  line-height: 145%;
+  position: relative;
+  margin-top: 40px;
+}
+
+blockquote:before {
+  content: "\201C";
+  font-size: 500%;
+  display: block;
+  position: absolute;
+  top: -5px;
+  left: -5px;
+}
+
+cite {
+  font-size: 90%;
+  margin-top: 25px;
+  display: block;
+}
+
+cite img {
+  height: 45px;
+  border-radius: 50%;
+  margin-right: 10px;
+  vertical-align: middle;
+}
+
+/**********************************************************************/
+/*Sign up*/
+/**********************************************************************/
+
+
+.section-plans {
+  background-color: rgb(241, 241, 241);
+}
+
+.plan-box {
+  background-color: white;
+  border-radius: 15px;
+  width: 100%;
+  height: 95%;;
+  margin-left: 5%;
+  box-shadow: 0 2px 2px rgb(233, 233, 233);
+}
+
+.plan-box div {
+  padding: 15px;
+  border-top: 1px solid rgb(236, 236, 236);
+}
+
+.plan-box div:first-child {
+  background-color: rgb(250, 250, 250);
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+}
+
+
+.plan-box div:last-child {
+text-align: center;
+}
+
+.plan-box ul {
+  list-style: none;
+}
+
+.plan-box ul li{
+  padding: 5px 0;
+}
+
+.plan-box i {
+  display: inline;
+  width: 30px;
+  text-align: center;
+  color: #e67e22;
+  font-size: 150%;
+  margin-right: 10px;
+
+  /*Aligning text and icons*/
+  line-height: 120%;
+  vertical-align: middle;
+  margin-top: -4px;
+}
+
+.plan-price {
+  font-size: 300%;
+  margin-bottom: 10px;
+  font-weight: 100;
+  color: #e67e22;
+}
+
+/*
+.plan-price span is a child of .plan-price
+Therefore, the font size of the span is 30% of the parent class,
+which is 300%, and not the base class with font-size of 18px
+*/
+
+.plan-price span {
+  font-size: 30%;
+  font-weight: 300;
+}
+
+.plan-price-meal {
+  font-size: 80%;
+
+}
+
+.section-plans a {
+  text-transform: none;
+  color:  #e67e22;
+}
+
+.section-plans button {
+  margin-top: 10px;
+  margin-bottom: 30px;
+}
+
+.section-plans .btn-primary:hover a {
+  color: white;
 }
