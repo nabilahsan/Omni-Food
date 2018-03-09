@@ -353,56 +353,87 @@
     <div class="container">
       <form class="contact-form" action="#" method="post">
         <div class="row form-group">
-          <div class="col-md-2">
+          <div class="col-md-4">
             <label for="">Name</label>
           </div>
-          <div class="col-md-10">
+          <div class="col-md-6">
             <input type="text" class="form-control" name="Name" id="name" placeholder="Your Name" required>
           </div>
 
-          <div class="col-md-2">
+          <div class="col-md-4">
             <label for="">Email</label>
           </div>
-          <div class="col-md-10">
+          <div class="col-md-6">
             <input type="email" class="form-control" name="Email" id="email" placeholder="Your Email" required>
           </div>
 
-          <div class="col-md-2">
+          <div class="col-md-4">
             <label for="">How did you find us?</label>
           </div>
-          <div class="col-md-10">
+          <div class="col-md-6">
             <select class="form-control" name="find-us" id="find-us">
-              <option value="friends">Friends</option>
+              <option value="friends" selected>Friends</option>
               <option value="search">Search Engine</option>
               <option value="ad">Advertisement</option>
               <option value="other">Other way</option>
-
             </select>
           </div>
 
-          <div class="col-md-2">
-            <label for="">Newsletter</label>
+          <div class="col-md-4">
+            <label>Newsletter</label>
           </div>
-          <div class="col-md-10">
-            <input type="text" class="form-control" name="Name" id="name" placeholder="Your Name" required>
-          </div>
-
-          <div class="col-md-2">
-            <label for="">Drop us a line</label>
-          </div>
-          <div class="col-md-10">
-            <input type="text" class="form-control" name="Name" id="name" placeholder="Your Name" required>
+          <div class="col-md-6 container form-check">
+            <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
+            <label>Yes, Please.</label>
           </div>
 
+          <div class="col-md-4">
+            <label>Drop us a line</label>
+          </div>
+          <div class="col-md-6">
+            <textarea name="message" placeholder="Your message"></textarea>
+          </div>
 
+          <div class="col-md-4">
+            <label for="">&nbsp;</label>
+          </div>
+          <div class="col-md-6">
+            <button class="btn btn-full" type="button" name="button">Send It</button>
+          </div>
         </div>
-
       </form>
-
     </div>
-
   </section>
 
+  <!--Footer-->
+  <footer>
+    <div class="container row">
+      <div class="col-md-6">
+        <ul class="footer-nav">
+          <li> <a href="#">About us</a> </li>
+          <li> <a href="#">Blog</a> </li>
+          <li> <a href="#">Press</a> </li>
+          <li> <a href="#">iOS App</a> </li>
+          <li> <a href="#">Android App</a> </li>
+        </ul>
+      </div>
+
+      <div class="col-md-6">
+        <ul class="social-links">
+          <li> <a href="#"> <i class="ion-social-twitter"></i> </a></li>
+          <li> <a href="#"> <i class="ion-social-facebook"></i> </a></li>
+          <li> <a href="#"> <i class="ion-social-googleplus"></i> </a></li>
+          <li> <a href="#"> <i class="ion-social-instagram-outline"></i> </a></li>
+
+        </ul>
+
+      </div>
+
+    </div>
+<div class="container">
+  <p> Copyright &copy; 2015 by OmniFood. All Rights Reserved </p>
+</div>
+  </footer>
 </body>
 
 </html>
