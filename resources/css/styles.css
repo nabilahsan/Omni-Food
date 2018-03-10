@@ -7,16 +7,18 @@
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
-html {
+html, body {
   background-color: white;
   color: #3d3d3d;
   font-family: 'Lato', 'Arial', sans-serif;
   font-weight: 300;
   font-size: 20px;
   text-rendering: optimizeLegibility;
+  overflow-x: hidden;
 }
 
 .clearfix {
@@ -172,6 +174,7 @@ h3 {
 /**********************************************************************/
 
 header {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.7)), to(rgba(0, 0, 0, 0.7))), url(img-css/hero.jpg);
   background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(img-css/hero.jpg);
   background-size: cover;
   background-position: center;
@@ -184,7 +187,8 @@ header {
   width: 1140px;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
 }
 
 .logo {
@@ -216,6 +220,7 @@ a, a:link, a:visited {
   font-size: 90%;
   border-bottom: 2px solid transparent;
   color: #ffffff;
+  -webkit-transition: border-bottom 0.2s;
   transition: border-bottom 0.2s;
   padding-bottom: 8px;
   padding-top: 0px;
@@ -257,13 +262,18 @@ a:hover, a:active {
   opacity: 0.7;
   width: 100%;
   height: auto;
-  transform: scale(1.15);
+  -webkit-transform: scale(1.15);
+          transform: scale(1.15);
+  -webkit-transition: opacity 0.5s, -webkit-transform 0.5s;
+  transition: opacity 0.5s, -webkit-transform 0.5s;
   transition: transform 0.5s, opacity 0.5s;
+  transition: transform 0.5s, opacity 0.5s, -webkit-transform 0.5s;
 }
 
 .meal-photos img:hover {
   opacity: 1;
-  transform: scale(1);
+  -webkit-transform: scale(1);
+          transform: scale(1);
 }
 
 /**********************************************************************/
@@ -370,6 +380,7 @@ a:hover, a:active {
 /**********************************************************************/
 
 .section-testimonials {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.79)), to(rgba(0, 0, 0, 0.79))), url(img-css/back-customers.jpg);
   background-image: linear-gradient(rgba(0, 0, 0, 0.79), rgba(0, 0, 0, 0.79)), url(img-css/back-customers.jpg);
   background-size: cover;
   color: white;
@@ -423,7 +434,8 @@ cite img {
   height: 95%;
   ;
   margin-left: 5%;
-  box-shadow: 0 2px 2px rgb(233, 233, 233);
+  -webkit-box-shadow: 0 2px 2px rgb(233, 233, 233);
+          box-shadow: 0 2px 2px rgb(233, 233, 233);
 }
 
 .plan-box div {
@@ -555,6 +567,7 @@ footer {
   text-decoration: none;
   border: 0;
   color: #888;
+  -webkit-transition: color 0.2s;
   transition: color 0.2s;
 }
 
@@ -569,6 +582,7 @@ footer p {
 
 .social-links li a:link, .social-links li a:visited {
   font-size: 180%;
+  -webkit-transition: color 0.2s;
   transition: color 0.2s;
 }
 
