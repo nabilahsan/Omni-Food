@@ -34,9 +34,7 @@ html, body {
 }
 
 /**********************************************************************/
-
 /*REUSABLE*/
-
 /**********************************************************************/
 
 .row {
@@ -168,9 +166,7 @@ h3 {
 }
 
 /**********************************************************************/
-
 /*HEADER*/
-
 /**********************************************************************/
 
 header {
@@ -191,11 +187,16 @@ header {
           transform: translate(-50%, -50%);
 }
 
-.logo {
+.logo, .logo-black {
+  display: block;
   height: 100px;
   width: auto;
   float: left;
   margin-top: 20px;
+}
+
+.logo-black {
+  display: none;
 }
 
 .main-nav {
@@ -229,11 +230,31 @@ a, a:link, a:visited {
 a:hover, a:active {
   border-bottom: 2px solid #e67e22;
 }
+/* Sticky Navigation */
+
+.sticky {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color:rgba(255, 255, 255, 0.77) ;
+}
+
+.sticky .main-nav a:link,
+.sticky .main-nav a:visited {
+  padding: 8px 0px;
+  color: #555;
+}
+
+.stick .logo {
+  display: none;
+}
+.sticky .logo-black {
+  display: block;
+}
 
 /**********************************************************************/
-
 /*Meals*/
-
 /**********************************************************************/
 
 .section-meals {
